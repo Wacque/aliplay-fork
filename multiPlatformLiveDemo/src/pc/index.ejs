@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <meta charset="utf-8">
+  <title>Aliplayer Web Player</title>
+  <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/zepto/zepto.min.js"></script>
+  <body>
+    <%= require('./component/header/index.html') %>
+    <div class="content">
+      <div class="mask">
+        <div class="contain clearfix">
+          <%= require('./component/video/index.html') %>
+          <div class="rightbar">
+            <%= require('./component/listheader/index.html') %>
+            <%= require('./component/livelist/index.html') %>
+            <%= require('./component/chat/index.html') %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Alibaba Cloud provides technical support</footer>
+  </body>
+</html>
